@@ -1,0 +1,30 @@
+---
+import { getCollection } from "astro:content";
+const blogs = await getCollection("blog");	
+
+import Layout from "../layouts/layout.astro";
+import { BASE_URL } from '../consts';
+---
+
+<Layout title="blog de ejemplo">
+	<main>
+		<h1>Astro</h1>
+			{
+				blogs.map(blog =>{
+					const { slug, data } = blog;
+					const { title } = data;
+
+					return (
+						<a href={`${BASE_URL}/blog/${slug}`}><h2>{title}</h2></a>
+					)
+					
+				})
+			}
+	</main>
+</Layout>
+
+		
+		
+		
+
+		
