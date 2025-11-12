@@ -1,4 +1,5 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
 import { BASE_URL } from '../consts';
 ---
 
@@ -9,7 +10,7 @@ import { BASE_URL } from '../consts';
 </header>
 
 <nav>
-<a href="/">Home</a>
-<a href={`${BASE_URL}/blog`}>Blog</a>
-<a href={`${BASE_URL}/about`}>About</a>
+<HeaderLink href="/">Inicio</HeaderLink>
+      <HeaderLink href="/blog">Posts</HeaderLink>
+      <HeaderLink href="/about">Sobre nosotros</HeaderLink>
 </nav>
