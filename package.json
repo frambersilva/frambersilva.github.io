@@ -1,0 +1,23 @@
+{
+  "name": "blog-con-astro",
+  "version": "0.0.1",
+  "description": "```sh npm create astro@latest -- --template blog ```",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.12",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.16.0",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {}
+}
