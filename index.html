@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framber Silva | Frontend Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<header>
+        <div class="container header-content">
+            <a href="#" class="font-bold text-xl flex items-center gap-2" style="position:relative; z-index: 2002;">
+                <span style="color:var(--primary);">&lt;/&gt;</span> Framber.
+            </a>
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-btn">☰</label>
+
+            <label for="menu-toggle" class="overlay-bg"></label>
+
+            <nav class="nav-links">
+                <a href="#about" class="text-muted hover:text-white" onclick="document.getElementById('menu-toggle').checked = false;">Experiencia</a>
+                <a href="#stack" class="text-muted hover:text-white" onclick="document.getElementById('menu-toggle').checked = false;">Stack</a>
+                <a href="#projects" class="text-muted hover:text-white" onclick="document.getElementById('menu-toggle').checked = false;">Proyectos</a>
+                <a href="#contact" class="btn btn-primary" onclick="document.getElementById('menu-toggle').checked = false;">Hablemos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container reveal">
+            <div style="display:inline-block; padding: 5px 15px; border-radius: 20px; border: 1px solid var(--border); color: var(--primary); font-size: 0.8rem; font-weight: 700; margin-bottom: 20px; background: rgba(99, 102, 241, 0.05);">
+                Frontend Developer
+            </div>
+            <h1>
+                Diseño experiencias <br>
+                <span class="text-primary">digitales y funcionales</span>
+            </h1>
+            <p class="text-muted" style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 40px auto;">
+                Especializado en WordPress, React y Optimización Web. Creo productos minimalistas, rápidos y accesibles.
+            </p>
+            <div class="flex justify-center gap-3">
+                <a href="#contact" class="btn btn-primary">Contáctame</a>
+                <a href="#projects" class="btn" style="border: 1px solid var(--border);">Ver Trabajo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="section">
+        <div class="container">
+            <h2 class="mb-4 reveal">Mi Stack Tecnológico</h2>
+            <div class="grid-responsive reveal">
+                
+                <div class="glass-card">
+                    <h3 class="font-bold text-xl mb-2">Frontend Core</h3>
+                    <p class="text-muted text-sm">HTML5, CSS3 Moderno, JavaScript (ES6+), React.js, TailwindCSS.</p>
+                </div>
+
+                <div class="glass-card">
+                    <h3 class="font-bold text-xl mb-2">WordPress Expert</h3>
+                    <p class="text-muted text-sm">Desarrollo de Temas (PHP), Custom Post Types, Optimización WPO, Seguridad.</p>
+                </div>
+
+                <div class="glass-card">
+                    <h3 class="font-bold text-xl mb-2">Herramientas</h3>
+                    <p class="text-muted text-sm">Git, GitHub, VS Code, Figma, Terminal, Webpack.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+            <div class="text-center mb-4 reveal">
+                <h2 class="mb-2">Experiencia</h2>
+                <p class="text-muted">Mi trayectoria profesional.</p>
+            </div>
+
+            <div class="timeline reveal">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2024 - Presente</span>
+                    <h3 class="text-xl font-bold">Desarrollador Frontend Freelance</h3>
+                    <p class="text-muted">Desarrollo de sitios web a medida para clientes internacionales. Especialización en optimización de rendimiento y SEO técnico.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2023 - 2024</span>
+                    <h3 class="text-xl font-bold">Creador de Mainter Theme</h3>
+                    <p class="text-muted">Diseño y desarrollo de un tema de WordPress propio enfocado en Core Web Vitals, utilizando PHP avanzado y CSS puro sin dependencias.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2021 - 2023</span>
+                    <h3 class="text-xl font-bold">Junior Web Developer</h3>
+                    <p class="text-muted">Mantenimiento de sitios web, implementación de landing pages y soporte técnico en agencia digital.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="mb-4 reveal">Proyectos Seleccionados</h2>
+            
+            <div class="grid-responsive reveal">
+                <article class="glass-card">
+                    <div style="background: #1e1e24; height: 180px; border-radius: 8px; margin-bottom: 20px; display:flex; align-items:center; justify-content:center;">
+                        <span class="font-bold text-2xl text-muted">Mainter</span>
+                    </div>
+                    <h3 class="font-bold text-xl">Mainter Theme</h3>
+                    <p class="text-muted text-sm mt-2 mb-4">Tema WP optimizado para velocidad.</p>
+                    <a href="#" class="text-primary font-bold text-sm">Ver Detalles →</a>
+                </article>
+
+                <article class="glass-card">
+                    <div style="background: #1e1e24; height: 180px; border-radius: 8px; margin-bottom: 20px; display:flex; align-items:center; justify-content:center;">
+                         <span class="font-bold text-2xl text-muted">SEO Tool</span>
+                    </div>
+                    <h3 class="font-bold text-xl">Keyword Research App</h3>
+                    <p class="text-muted text-sm mt-2 mb-4">Dashboard con React y APIs de datos.</p>
+                    <a href="#" class="text-primary font-bold text-sm">Ver Detalles →</a>
+                </article>
+
+                <article class="glass-card">
+                    <div style="background: #1e1e24; height: 180px; border-radius: 8px; margin-bottom: 20px; display:flex; align-items:center; justify-content:center;">
+                         <span class="font-bold text-2xl text-muted">Portfolio</span>
+                    </div>
+                    <h3 class="font-bold text-xl">Este Portafolio</h3>
+                    <p class="text-muted text-sm mt-2 mb-4">HTML5, CSS3, JS Vanilla. 0 librerías.</p>
+                    <a href="#" class="text-primary font-bold text-sm">Ver Código →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section" style="background: rgba(255,255,255,0.01);">
+        <div class="container reveal" style="max-width: 600px;">
+            <div class="text-center mb-4">
+                <h2 class="mb-2">Hablemos</h2>
+                <p class="text-muted">¿Tienes un proyecto? Envíame un mensaje.</p>
+            </div>
+
+            <form class="glass-card" style="padding: 40px;">
+                <div class="form-group">
+                    <label class="block text-sm font-bold mb-2">Nombre</label>
+                    <input type="text" class="form-input" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label class="block text-sm font-bold mb-2">Email</label>
+                    <input type="email" class="form-input" placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label class="block text-sm font-bold mb-2">Mensaje</label>
+                    <textarea class="form-input" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="font-bold text-xl mb-4 text-white">Framber Silva</h3>
+                    <p class="text-muted text-sm">Desarrollador Frontend enfocado en crear experiencias web excepcionales.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Enlaces</h4>
+                    <ul class="text-muted text-sm space-y-2" style="line-height: 2;">
+                        <li><a href="#about" class="hover:text-primary">Experiencia</a></li>
+                        <li><a href="#projects" class="hover:text-primary">Proyectos</a></li>
+                        <li><a href="#contact" class="hover:text-primary">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Social</h4>
+                    <ul class="text-muted text-sm space-y-2" style="line-height: 2;">
+                        <li><a href="#" class="hover:text-primary">Twitter / X</a></li>
+                        <li><a href="#" class="hover:text-primary">GitHub</a></li>
+                        <li><a href="#" class="hover:text-primary">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid var(--border); padding-top: 30px; text-align: center;">
+                <p class="text-muted text-sm">© 2026 Framber Silva. Hecho con ❤️ y CSS Puro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
